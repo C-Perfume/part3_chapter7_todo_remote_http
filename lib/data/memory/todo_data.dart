@@ -80,12 +80,16 @@ class TodoData extends GetxController {
       case TodoStatus.unknown:
         return;
     }
+<<<<<<< Updated upstream
     final Todo todoForSave = Todo(
         id: todo.id,
         createdTime: todo.createdTime,
         title: todo.title,
         dueDate: todo.dueDate,
         status: nextStatus);
+=======
+    final Todo todoForSave = todo.copyWith(status: nextStatus);
+>>>>>>> Stashed changes
     final responseResult = await todoRepository.updateTodo(todoForSave); //객체 안의 status 바꿔서 update요청
     processResponseResult(responseResult, todoForSave);
   }

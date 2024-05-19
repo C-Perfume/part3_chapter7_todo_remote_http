@@ -89,6 +89,10 @@ dev_dependencies:
   retrofit_generator: 7.0.8
   build_runner: 2.3.3
   json_serializable: ^6.6.1
+<<<<<<< Updated upstream
+=======
+  freezed: ^2.3.4
+>>>>>>> Stashed changes
   isar_generator: 3.1.0+1
   mock_web_server: ^5.0.0-nullsafety.1
   flutter_oss_licenses: ^2.0.1

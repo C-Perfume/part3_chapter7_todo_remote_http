@@ -10,6 +10,7 @@ class Todo {
   DateTime dueDate;
   TodoStatus status;
 
+<<<<<<< Updated upstream
   Todo({
     required this.id,
     required this.createdTime,
@@ -18,6 +19,10 @@ class Todo {
     required this.dueDate,
     this.status = TodoStatus.incomplete,
   });
+=======
+@unfreezed
+class Todo with _$Todo{
+>>>>>>> Stashed changes
 
   factory Todo.fromJson(Map<String, Object?> json) {
     return Todo(
@@ -30,6 +35,7 @@ class Todo {
     );
   }
 
+<<<<<<< Updated upstream
   Map<String, dynamic> toJson() {
     return <String, dynamic>{
       'id': id,
@@ -40,6 +46,18 @@ class Todo {
       'status': describeEnum(status),
     };
   }
+=======
+  factory Todo({
+    required final int id,
+    @JsonKey(name: 'created_time')required final DateTime createdTime,
+    DateTime? modifyTime,
+    required String title,
+    required DateTime dueDate,
+    @Default(TodoStatus.unknown) TodoStatus status,
+  }) = _Todo;
+
+  factory Todo.fromJson(Map<String, Object?> json) => _$TodoFromJson(json);
+>>>>>>> Stashed changes
 
   TodoDbModel get dbModel => TodoDbModel(id, createdTime, modifyTime, title, dueDate, status);
 }
