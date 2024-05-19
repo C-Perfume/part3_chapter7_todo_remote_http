@@ -21,7 +21,10 @@ Todo _$TodoFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Todo {
   int get id => throw _privateConstructorUsedError;
+<<<<<<< Updated upstream
   @JsonKey(name: 'created_time')
+=======
+>>>>>>> Stashed changes
   DateTime get createdTime => throw _privateConstructorUsedError;
   DateTime? get modifyTime => throw _privateConstructorUsedError;
   set modifyTime(DateTime? value) => throw _privateConstructorUsedError;
@@ -44,7 +47,11 @@ abstract class $TodoCopyWith<$Res> {
   @useResult
   $Res call(
       {int id,
+<<<<<<< Updated upstream
       @JsonKey(name: 'created_time') DateTime createdTime,
+=======
+      DateTime createdTime,
+>>>>>>> Stashed changes
       DateTime? modifyTime,
       String title,
       DateTime dueDate,
@@ -108,7 +115,11 @@ abstract class _$$_TodoCopyWith<$Res> implements $TodoCopyWith<$Res> {
   @useResult
   $Res call(
       {int id,
+<<<<<<< Updated upstream
       @JsonKey(name: 'created_time') DateTime createdTime,
+=======
+      DateTime createdTime,
+>>>>>>> Stashed changes
       DateTime? modifyTime,
       String title,
       DateTime dueDate,
@@ -165,7 +176,11 @@ class __$$_TodoCopyWithImpl<$Res> extends _$TodoCopyWithImpl<$Res, _$_Todo>
 class _$_Todo extends _Todo with DiagnosticableTreeMixin {
   _$_Todo(
       {required this.id,
+<<<<<<< Updated upstream
       @JsonKey(name: 'created_time') required this.createdTime,
+=======
+      required this.createdTime,
+>>>>>>> Stashed changes
       this.modifyTime,
       required this.title,
       required this.dueDate,
@@ -177,7 +192,10 @@ class _$_Todo extends _Todo with DiagnosticableTreeMixin {
   @override
   final int id;
   @override
+<<<<<<< Updated upstream
   @JsonKey(name: 'created_time')
+=======
+>>>>>>> Stashed changes
   final DateTime createdTime;
   @override
   DateTime? modifyTime;
@@ -224,7 +242,11 @@ class _$_Todo extends _Todo with DiagnosticableTreeMixin {
 abstract class _Todo extends Todo {
   factory _Todo(
       {required final int id,
+<<<<<<< Updated upstream
       @JsonKey(name: 'created_time') required final DateTime createdTime,
+=======
+      required final DateTime createdTime,
+>>>>>>> Stashed changes
       DateTime? modifyTime,
       required String title,
       required DateTime dueDate,
@@ -236,7 +258,10 @@ abstract class _Todo extends Todo {
   @override
   int get id;
   @override
+<<<<<<< Updated upstream
   @JsonKey(name: 'created_time')
+=======
+>>>>>>> Stashed changes
   DateTime get createdTime;
   @override
   DateTime? get modifyTime;
